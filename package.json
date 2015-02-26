@@ -1,0 +1,18 @@
+{
+  "name": "4waysandbox",
+  "version": "1.0.0",
+  "description": "4Way FS Sandbox",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "ff.kirill@gmail.com",
+  "license": "GPL3+",
+  "devDependencies": {
+    "babel": "^4.5.5",
+    "babel-runtime": "^4.5.5",
+    "browserify": "^9.0.3",
+    "gulp": "^3.8.11",
+    "vinyl-source-stream": "^1.0.0"
+  }
+}
