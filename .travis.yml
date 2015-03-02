@@ -9,6 +9,8 @@ deploy:
   provider: releases
   api_key:
     secure: euzcjEwst6L00R1FIeDqOWMmCJV3b+olxUhYPzg1nj5IClRGYr9jnDw/LiDhBnLzDrvCXxh4lpoL7aumA+R+yntGX0qCAYkR1RYaQFjdA2yK8WJgxiyPmv0XcKXiobANAmKHIcnnSirCqJw350yEdHaDzjXbGseLJ13DQda9xcU=
-  file: dist.tar.bz2
+  skip_cleanup: true
+  file: "dist.tar.bz2"
   on:
     repo: ffkirill/4waysandbox
+    tags: true
