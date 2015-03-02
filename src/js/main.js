@@ -219,9 +219,16 @@ export class BlockItem {
         let pickedColor = getReferenceColorName(data);
         if (pickedColor) {
             if (this.fromColor !== null) {
-                this.onSwapColors(this.fromColor, pickedColor);
+                this.canvas.style.background = '';
+                if (this.fromColor !== pickedColor) {
+                    this.onSwapColors(this.fromColor, pickedColor);
+                } else {
+                    this.fromColor = null;
+                }
             } else {
+                let color = colors[pickedColor];
                 this.fromColor = pickedColor;
+                this.canvas.style.background = `rgba(${color[0]}, ${color[1]}, ${color[2]}, 0.6)`;
             }
         }
     }
